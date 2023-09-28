@@ -123,6 +123,63 @@ int main(void) {
 
 
 
+/*==========================================================*/
+/* int cpt_changement_PF (int lancer);
+   donne ou réalise .... BLABLABLA
+
+PARAMETRE(s): lancer de piece a executer
+
+SORTIE: nombre de changement 
+
+SPECS: 
+*/
+
+// votre vraie déclaration  exigée par le C vient ici
+
+
+/*==========================================================*/
+
+
+//=========================================================
+// c'est dans celui-ci que vous testerez la nouvelle fonction
+// vous comprenez :)
+
+#if 0
+int main(void) {
+
+
+
+
+
+
+
+
+
+
+
+	return EXIT_SUCCESS;
+}
+#endif
+//=========================================================
+
+
+/*==========================================================*/
+/* La fonction   (mettez son nom)
+   donne ou réalise .... BLABLABLA
+
+PARAMETRE(s): 
+
+SORTIE: 
+
+SPECS: 
+*/
+
+// votre vraie déclaration  exigée par le C vient ici
+
+
+/*==========================================================*/
+
+
 //=========================================================
 // c'est dans celui-ci que vous testerez la nouvelle fonction
 // vous comprenez :)
