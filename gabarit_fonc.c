@@ -125,15 +125,11 @@ int main(void) {
 
 /*==========================================================*/
 /* int cpt_changement_PF (int lancer);
-   donne ou réalise .... BLABLABLA
-
+   Compte le nb de changement de resultat entre Pile ou Face quand on simule un nombre choisi de lancer
 PARAMETRE(s): lancer de piece a executer
-
 SORTIE: nombre de changement 
-
 SPECS: 
 */
-
 // votre vraie déclaration  exigée par le C vient ici
 int cpt_changement_PF (int lancer); 
 
@@ -160,7 +156,27 @@ int cpt_changement_PF (int lancer) {
 // on prend en compte le "changement" au premier lancer
      cpt = cpt - 1 ;
      return cpt; 
+}
 
+//=========================================================
+
+/*==========================================================*/
+/* void tst_cpt_changement_PF (void);
+   Test de la fonction cpt_changement_PF
+PARAMETRE(s): aucun
+SORTIE:
+SPECS: 
+*/
+// votre vraie déclaration  exigée par le C vient ici
+void tst_cpt_changement_PF (void) ; 
+
+/*==========================================================*/
+void tst_cpt_changement_PF (void) {
+     assert(cpt_changement_PF (0) == 0 );
+     assert(cpt_changement_PF (1) == 0 );
+     assert(cpt_changement_PF (100000) >= 1 );
+     assert(cpt_changement_PF (3) <= 2 );
+}
 //=========================================================
 // c'est dans celui-ci que vous testerez la nouvelle fonction
 // vous comprenez :)
@@ -168,7 +184,8 @@ int cpt_changement_PF (int lancer) {
 #if 0
 int main(void) {
 
-
+    
+	
 
 
 
