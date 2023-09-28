@@ -1,22 +1,22 @@
 /*==========================================================*/
 /* 
-	Une courte présentation francaise suit l'introduction en anglais des auteurs
-	et donne le caractère général de chaque  fonction
+	Une courte prÃ©sentation francaise suit l'introduction en anglais des auteurs
+	et donne le caractÃ¨re gÃ©nÃ©ral de chaque  fonction
 
    Les auteurs n'offrant que des distributions uniformes qui peuvent parfois 
    paraitre redondantes.
-   J'ai ajouté des fonctions standardisées pour obtenir des évènements  
+   J'ai ajoutÃ© des fonctions standardisÃ©es pour obtenir des Ã©vÃ¨nements  
    dans une distribution :
-		uniforme générale( avec  ou  sans  bornes ) entière ou réelle.
-		normale avec Z(0,1) ou normale à moyenne et écart-type définis
+		uniforme gÃ©nÃ©rale( avec  ou  sans  bornes ) entiÃ¨re ou rÃ©elle.
+		normale avec Z(0,1) ou normale Ã  moyenne et Ã©cart-type dÃ©finis
 	
-	Je n'ai ajouté qu'une présentation minimale en francais aux fonctions originales
-	offertes sans rien  y changer + quelques observations pour nos étudiants
+	Je n'ai ajoutÃ© qu'une prÃ©sentation minimale en francais aux fonctions originales
+	offertes sans rien  y changer + quelques observations pour nos Ã©tudiants
 
-	Le commentaire en présentation des déclarations originales de fonctions 
-	ne suit pas le modèle donné dans le cours....
-	il est vraiment 'limité' mais c'est souvent ainsi qu'on offre
-	du code....  mal emballé.
+	Le commentaire en prÃ©sentation des dÃ©clarations originales de fonctions 
+	ne suit pas le modÃ¨le donnÃ© dans le cours....
+	il est vraiment 'limitÃ©' mais c'est souvent ainsi qu'on offre
+	du code....  mal emballÃ©.
 
 	hs
 
@@ -74,7 +74,7 @@
 #define _MT19937AR_H_
 /*==========================================================*/
 
-//permet de désactiver certains warnings de stdio
+//permet de dÃ©sactiver certains warnings de stdio
 #define _CRT_SECURE_NO_WARNINGS   
 #include<stdio.h>
 #include<stdlib.h>
@@ -84,22 +84,22 @@
 /*==========================================================*/
 /*==========================================================*/
 
-/* VOICI UNE INTERFACE MODULAIRE STANDARD POUR MES ÉTUDIANT·E·S */
+/* VOICI UNE INTERFACE MODULAIRE STANDARD POUR MES Ã‰TUDIANTÂ·EÂ·S */
 
 /*==========================================================*/
 /*  D'abord l'offre de deux fonctions d'initialisation du
-     générateur. Un générateur non-initialisé s'initialise 
-     en fait à 0 et émet la même séquence ce qui ferait douter
-	 un néophite du caractère aléatoire.... 
-	 C'est au client d'initialiser un générateur
+     gÃ©nÃ©rateur. Un gÃ©nÃ©rateur non-initialisÃ© s'initialise 
+     en fait Ã  0 et Ã©met la mÃªme sÃ©quence ce qui ferait douter
+	 un nÃ©ophite du caractÃ¨re alÃ©atoire.... 
+	 C'est au client d'initialiser un gÃ©nÃ©rateur
 	 MAIS JUSTE UNE FOIS dans tout le programme qui l'utilise
 */
 
 /*==========================================================*/
 /* La fonction mt_srand 
- la forme d'initialisation la plus classique d'un générateur  
- à partir d'un entier quelconque en parametre, la séquence pseudo aléatoire 
- à venir est totalement déterminée par la valeur donnée 
+ la forme d'initialisation la plus classique d'un gÃ©nÃ©rateur  
+ Ã  partir d'un entier quelconque en parametre, la sÃ©quence pseudo alÃ©atoire 
+ Ã  venir est totalement dÃ©terminÃ©e par la valeur donnÃ©e 
 
 PARAMETRE(s): s, un entier quelconque
 
@@ -114,30 +114,30 @@ void mt_srand(unsigned long s);
 
 /*==========================================================*/
 /* la fonction mt_srandSys 
- une forme alternative d'initialisation du générateur à partir 
+ une forme alternative d'initialisation du gÃ©nÃ©rateur Ã  partir 
  de l'horloge interne de la machine,  l'horloge donne un entier
- qui sert de paramètre à la fonction précédente. 
- Cette valeur est retournée pour des motifs de possible reproduction
- des conditions initiales d'une simulation numérique.
+ qui sert de paramÃ¨tre Ã  la fonction prÃ©cÃ©dente. 
+ Cette valeur est retournÃ©e pour des motifs de possible reproduction
+ des conditions initiales d'une simulation numÃ©rique.
 
 PARAMETRE(s): Aucun
 
-SORTIE: l'entier qui a véritablement initialisé le générateur
+SORTIE: l'entier qui a vÃ©ritablement initialisÃ© le gÃ©nÃ©rateur
 
 SPECS: aucune
 */
 unsigned long mt_srandSys(void);
 /*==========================================================*/
 
-/* LES CINQ FONCTIONS D'ÉMISSION DANS DES DISTRIBUTIONS SPÉCIFIÉES */
+/* LES CINQ FONCTIONS D'Ã‰MISSION DANS DES DISTRIBUTIONS SPÃ‰CIFIÃ‰ES */
 
 /*==========================================================*/
 /* La fonction mt_rand   
-L'émission d'un nombre réel dans la distribution uniforme 0,1 
+L'Ã©mission d'un nombre rÃ©el dans la distribution uniforme 0,1 
 
 PARAMETRE(s): Aucun
 
-SORTIE : la valeur émise par le générateur
+SORTIE : la valeur Ã©mise par le gÃ©nÃ©rateur
 
 SPECS : aucune
 */
@@ -145,16 +145,16 @@ double mt_rand(void);
 /*==========================================================*/
 
 /*==========================================================*/
-/* La fonction mt_randf, issue de la précédente
+/* La fonction mt_randf, issue de la prÃ©cÃ©dente
 
-L'émission selon une distribution uniforme dans intervalle [b1, b2] 
+L'Ã©mission selon une distribution uniforme dans intervalle [b1, b2] 
 
-PARAMETRE(s): deux valeurs réelles quelconques qui serviront 
-               de bornes à l'intervalle
+PARAMETRE(s): deux valeurs rÃ©elles quelconques qui serviront 
+               de bornes Ã  l'intervalle
 
-SORTIE : la valeur émise par le générateur
+SORTIE : la valeur Ã©mise par le gÃ©nÃ©rateur
 
-SPECS : l'ordre des paramètres n'a aucune importance
+SPECS : l'ordre des paramÃ¨tres n'a aucune importance
 */
 double mt_randf(double b1, double b2);
 /*==========================================================*/
@@ -162,14 +162,14 @@ double mt_randf(double b1, double b2);
 /*==========================================================*/
 /* La fonction mt_randi
 
-L'émission d'un nombre entier positif dans une uniforme [1, borne]
+L'Ã©mission d'un nombre entier positif dans une uniforme [1, borne]
 
-PARAMETRE(s): une valeur entière quelconque
+PARAMETRE(s): une valeur entiÃ¨re quelconque
 
-SORTIE : la valeur entière émise par le générateur
+SORTIE : la valeur entiÃ¨re Ã©mise par le gÃ©nÃ©rateur
 
-SPECS :  si le paramètre effectif < 0 , c'est la valeur absolue 
-			du paramètre  qui sera considérée
+SPECS :  si le paramÃ¨tre effectif < 0 , c'est la valeur absolue 
+			du paramÃ¨tre  qui sera considÃ©rÃ©e
          recevant 0 elle retourne automatiquement 0 et 
 			c'est le seul 0 possible
 */
@@ -179,16 +179,16 @@ int mt_randi(int borne);
 /*==========================================================*/
 /* La fonction mt_randn
 
-L'émission d'un nombre réel dans la distribution normale Z, 
-la plus classique  de moyenne 0 et d'écart type 1
+L'Ã©mission d'un nombre rÃ©el dans la distribution normale Z, 
+la plus classique  de moyenne 0 et d'Ã©cart type 1
 
 PARAMETRE(s) : Aucun
 
-SORTIE : la valeur réelle émise par le générateur
+SORTIE : la valeur rÃ©elle Ã©mise par le gÃ©nÃ©rateur
 
-SPECS : celle-ci a une parité dans l'émission
-ce qui peut déconcerter si on réinitialise le générateur
-en cours d'exécution ( ce qui en réalité ne doit PAS être fait)
+SPECS : celle-ci a une paritÃ© dans l'Ã©mission
+ce qui peut dÃ©concerter si on rÃ©initialise le gÃ©nÃ©rateur
+en cours d'exÃ©cution ( ce qui en rÃ©alitÃ© ne doit PAS Ãªtre fait)
 */
 double mt_randn(void);
 /*==========================================================*/
@@ -196,12 +196,12 @@ double mt_randn(void);
 /*==========================================================*/
 /* La fonction mt_randnormal
 
-L'émission d'un nombre réel dans une distribution normale quelconque, 
-  de moyenne mu  et d'écart-type sigma donnés
+L'Ã©mission d'un nombre rÃ©el dans une distribution normale quelconque, 
+  de moyenne mu  et d'Ã©cart-type sigma donnÃ©s
 
-PARAMETRE(s) : mu définit la moyenne voulue et sigma l'écart-type
+PARAMETRE(s) : mu dÃ©finit la moyenne voulue et sigma l'Ã©cart-type
 
-SORTIE : la valeur réelle émise par le générateur
+SORTIE : la valeur rÃ©elle Ã©mise par le gÃ©nÃ©rateur
 
 SPECS : le signe de sigma n'a pas d'importance.
 */
@@ -215,40 +215,40 @@ double mt_randnormal(double mu, double sigma);
 
 
 /*==========================================================*/
-/* SUIT L'INTERFACE ORIGINALE DES DEUX CRÉATEURS */
+/* SUIT L'INTERFACE ORIGINALE DES DEUX CRÃ‰ATEURS */
 /*==========================================================*/
 /* 
    l'utilisation du type long par les auteurs avait une importance
    historique lorsque les entiers de base(int) pouvaient encore avoir une 
-   représentation à 16 bits, le long nous assurait de 32 bits (ce 
-   que les auteurs considèrent normal, puisque c'est le format 
-   qu'ils décrivent partout) et c'est 32 bits qu'on obtient maintenant 
+   reprÃ©sentation Ã  16 bits, le long nous assurait de 32 bits (ce 
+   que les auteurs considÃ¨rent normal, puisque c'est le format 
+   qu'ils dÃ©crivent partout) et c'est 32 bits qu'on obtient maintenant 
    sur tout compilateur moderne avec un int.
 
    l'utilisation du modificateur unsigned  par les auteurs 
    fait partie des choixs offerts au client. Les auteurs auraient bien
    pu passer sous silence et tout dans l'interface serait en int.
    
-	Encore par souci d'élargir l'interface, les auteurs offrent toutes 
-	les 4 formes d'uniformes réelles entre 0 et 1 :
+	Encore par souci d'Ã©largir l'interface, les auteurs offrent toutes 
+	les 4 formes d'uniformes rÃ©elles entre 0 et 1 :
 		(0,1) intervalle ouvert --sans 0 ni 1 --
-		[0,1) intervalle ouvert à droite -- avec 0 mais sans 1 --
-		(0,1] intervalle ouvert à gauche -- sans 0 mais avec 1 --
-		[0,1] intervalle fermé  -- avec 0 et avec 1 --
+		[0,1) intervalle ouvert Ã  droite -- avec 0 mais sans 1 --
+		(0,1] intervalle ouvert Ã  gauche -- sans 0 mais avec 1 --
+		[0,1] intervalle fermÃ©  -- avec 0 et avec 1 --
 
   */
 /*==========================================================*/
 /*	Deux formes d'init possibles.
-	Vous pouvez ne pas vous préoccuper du unsigned long 
-	en paramètre formel et donner un int ou un tableau 
+	Vous pouvez ne pas vous prÃ©occuper du unsigned long 
+	en paramÃ¨tre formel et donner un int ou un tableau 
 	de int (En assumant alors le warning possible)
 */
 /*==========================================================*/
 
 /* initializes mersenne twister 
    pseudo-random number generator with a seed */
-/* initialisation à partir d'un entier quelconque */
-/* la séquence pseudo aléatoire sera totalement déterminée*/
+/* initialisation Ã  partir d'un entier quelconque */
+/* la sÃ©quence pseudo alÃ©atoire sera totalement dÃ©terminÃ©e*/
 
 void mt_init_genrand(unsigned long s);
 /*==========================================================*/
@@ -260,21 +260,21 @@ void mt_init_genrand(unsigned long s);
 	slight change for C++, 2004/2/26
 	idem in ANSI C
 */
-/* variante de la précédente mais ici,
+/* variante de la prÃ©cÃ©dente mais ici,
   donnez- lui un tableau  d'entiers et la taille du tableau */
 
 void mt_init_by_array(const unsigned long init_key[], int key_length);
 /*==========================================================*/
 
 /* generates a random number on [0,0xffffffff]-interval*/
-/* Pour obtenir un entier sur 32 bits pseudo-aléatoires */
+/* Pour obtenir un entier sur 32 bits pseudo-alÃ©atoires */
 unsigned long mt_genrand_int32(void);
 
 /*==========================================================*/
 /* generates a random number on [0,0x7fffffff]-interval*/
-/* Pour obtenir un entier sur 31 bits pseudo-aléatoires */
-/* Vous êtes simplement assuré qu'il ne sera pas négatif */
-/* si on récupère dans un int à 32 bits*/
+/* Pour obtenir un entier sur 31 bits pseudo-alÃ©atoires */
+/* Vous Ãªtes simplement assurÃ© qu'il ne sera pas nÃ©gatif */
+/* si on rÃ©cupÃ¨re dans un int Ã  32 bits*/
 long mt_genrand_int31(void);
 
 /*==========================================================*/
@@ -284,9 +284,9 @@ long mt_genrand_int31(void);
 /* These real versions are due to Isaku Wada, 2002/01/09 added */
 
 /* et les quatre uniformes dans l'intervalle 0,1 */
-/* simplement différenciées par le suffixe 1,2,3,53*/
-/* PAS très fort comme représentativité ...... */
-/* mais l'âme japonaise souffre surement des mêmes maux que la notre!*/
+/* simplement diffÃ©renciÃ©es par le suffixe 1,2,3,53*/
+/* PAS trÃ¨s fort comme reprÃ©sentativitÃ© ...... */
+/* mais l'Ã¢me japonaise souffre surement des mÃªmes maux que la notre!*/
 
 /* generates a random number on [0,1]-real-interval*/
 double mt_genrand_real1(void);
