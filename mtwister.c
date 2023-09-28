@@ -220,7 +220,7 @@ double mt_genrand_res53(void)
 
 /*==========================================================*/
 
-/* implémentation des 7 fonctions ajoutées pour nos étudiants */
+/* implÃ©mentation des 7 fonctions ajoutÃ©es pour nos Ã©tudiants */
 /*==========================================================*/
 
 void mt_srand(unsigned long s){
@@ -253,8 +253,8 @@ int mt_randi(int borne){
 
 /*==========================================================*/
 
-/* obtenu de la Marsaglia’s polar method 
-    bien décrite sur wiki
+/* obtenu de la Marsagliaâ€™s polar method 
+    bien dÃ©crite sur wiki
 */
 double mt_randn(void) {
 	static int test_regener = 1;
@@ -296,8 +296,8 @@ double mt_randn0(void){
 
 
 /*==========================================================*/
-// simple transformation linéaire de la normale 0,1
-// consultez un cours élémentaire de stats
+// simple transformation linÃ©aire de la normale 0,1
+// consultez un cours Ã©lÃ©mentaire de stats
 double mt_randnormal(double mu, double sigma){
 	return mu+mt_randn()*sigma ;
 }
