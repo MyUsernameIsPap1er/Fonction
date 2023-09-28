@@ -135,10 +135,31 @@ SPECS:
 */
 
 // votre vraie déclaration  exigée par le C vient ici
-
+int cpt_changement_PF (int lancer); 
 
 /*==========================================================*/
-
+int cpt_changement_PF (int lancer) {
+// initialize twister - la piece a comparer - le compteur de changement
+    mt_srandSys();
+    int pieceprime = 0 ; 
+    int cpt = 0;
+// pendant quil reste des lancer a faire...
+    while (lancer){
+	    //P = 1 - F = 2
+           int piece = mt_randi(2);
+	    // Si on lancer suivant est different
+           if (piece != piece prime) {
+		   // on compte le changement
+               cpt += 1;
+		   // on change la piece a comparer
+               pieceprime = piece ;
+	   }
+	    // on a completer un lancer
+           lancer -= 1 ; 
+     }
+// on prend en compte le "changement" au premier lancer
+     cpt = cpt - 1 ;
+     return cpt; 
 
 //=========================================================
 // c'est dans celui-ci que vous testerez la nouvelle fonction
