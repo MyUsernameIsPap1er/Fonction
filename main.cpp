@@ -5,26 +5,40 @@
 #include<assert.h>
 #include"Aut2023_155_cours00/mtwister.h"
 
-int main(void){}
+int main(void){
+ts_compter_nb_digit_impair_de_entier()
+compter_nb_digit_impair_de_entier(506571)
+	return EXIT_SUCCESS
+}
+
+
+
 
 
 //def_function===============================
 int compter_nb_digit_impair_de_entier(int N){
-	N = entier;
 	int cpt_imp = 0;
 
-	while(number){
-		int digit = number % 10;
+	while(N){
+		int digit = N % 10;
 		if (digit % 2) {
-			cpt_imp++;
+			++cpt_imp;
 		}
 
-		number /= 10;
+		N /= 10;
 	}
+	return cpt_imp;
+}
 
 
 //========================================
-void compter_nb_digit_impair_de_entier(void)
+void ts_compter_nb_digit_impair_de_entier(void){
+assert(compter_nb_digit_impair_de_entier(0)==0);
+assert(compter_nb_digit_impair_de_entier(2)==0);
+assert(compter_nb_digit_impair_de_entier(1)==1);
+assert(compter_nb_digit_impair_de_entier(3740)==2);
+
+
 
 
 
