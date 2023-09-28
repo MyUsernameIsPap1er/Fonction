@@ -1,26 +1,26 @@
 //=========================================================
-// 	hs pour nos étudiants en C
+// 	hs pour nos Ã©tudiants en C
 //=========================================================
 
-/*	ce nouveau gabarit  vous initie au développement de
+/*	ce nouveau gabarit  vous initie au dÃ©veloppement de
 	fonctions simples
 
-	il vous permettra de développer un petit
+	il vous permettra de dÃ©velopper un petit
 	algorithme dans un main ( avec son #if 1 )
 
-	une fois le programme testé (breakpoint, F10,F11)
+	une fois le programme testÃ© (breakpoint, F10,F11)
     on extrait l'algo de ce main pour en faire une fonction
-	INDÉPENDANTE avec sa déclaration et sa définition
+	INDÃ‰PENDANTE avec sa dÃ©claration et sa dÃ©finition
 
-	vous testez bien sûr un premier appel de la nouvelle fonction
+	vous testez bien sÃ»r un premier appel de la nouvelle fonction
 	dans l'autre main (inversez le 1 et le 0 dans les #if )
-	ça marche bien, testez alors quelques appels différents
+	Ã§a marche bien, testez alors quelques appels diffÃ©rents
 
-	maintenant vous êtes passablement assurées
-	de la qualité de votre fonction
+	maintenant vous Ãªtes passablement assurÃ©es
+	de la qualitÃ© de votre fonction
 		jetez le contenu du premier main (qui est devenu inutile YES)
-		et attaquez- vous à un autre algorithme de votre niveau
-		très rapidement vous deviendrez bons et bonnes
+		et attaquez- vous Ã  un autre algorithme de votre niveau
+		trÃ¨s rapidement vous deviendrez bons et bonnes
 
 
 */
@@ -29,7 +29,7 @@
 
 
 //=========================================================
-// voici qui permet de désactiver certains warnings stupides de Visual 
+// voici qui permet de dÃ©sactiver certains warnings stupides de Visual 
 #define _CRT_SECURE_NO_WARNINGS 
 
 /*=========================================================*/ 
@@ -46,15 +46,15 @@
 
 
 /*=========================================================*/
-// PLACE DES DÉCLARATIONS DE FONCTIONS
+// PLACE DES DÃ‰CLARATIONS DE FONCTIONS
 /*=========================================================*/
-//  réalisez une déclaration pour  chaque fonction
+//  rÃ©alisez une dÃ©claration pour  chaque fonction
 // aujourd'hui remplissez sommairement les commentaires
 // j'en laisse 2 en gabarit, suffit de copier/coller
 
 /*==========================================================*/
 /* La fonction   (mettez son nom)
-   donne ou réalise .... BLABLABLA
+   donne ou rÃ©alise .... BLABLABLA
 
 PARAMETRE(s): 
 
@@ -63,14 +63,14 @@ SORTIE:
 SPECS: 
 */
 
-// votre vraie déclaration  exigée par le C vient ici
+// votre vraie dÃ©claration  exigÃ©e par le C vient ici
 
 
 /*==========================================================*/
 
 /*==========================================================*/
 /* La fonction   (mettez son nom)
-   donne ou réalise .... BLABLABLA
+   donne ou rÃ©alise .... BLABLABLA
 
 PARAMETRE(s):
 
@@ -79,7 +79,7 @@ SORTIE:
 SPECS:
 */
 
-// votre vraie déclaration  exigée par le C vient ici
+// votre vraie dÃ©claration  exigÃ©e par le C vient ici
 
 
 /*==========================================================*/
@@ -87,7 +87,7 @@ SPECS:
 /*=========================================================*/
 
 /*just for fun, je vous laisse l'algo qui fait la somme  
-  des resultats pairs en lancant plusieurs fois un dé */
+  des resultats pairs en lancant plusieurs fois un dÃ© */
 
 #if 1
 int main(void) {
@@ -103,19 +103,19 @@ int main(void) {
 
 	mt_srandSys(); // j'initialise le twister
 
-	// la boucle de simulation des lancers du dé
+	// la boucle de simulation des lancers du dÃ©
 	while (iter_lancers < nb_lancers) {
 		valeur_dice = mt_randi(6);
 
-		//  on somme si le résultat est pair
+		//  on somme si le rÃ©sultat est pair
 		if ((valeur_dice % 2) == 0) {
 			somme_pairs = somme_pairs + valeur_dice;
 		}
-		// incrémentation qui assure la boucle
+		// incrÃ©mentation qui assure la boucle
 		iter_lancers += 1;
 	}
 
-	// c'est fini, le  résultqat est dans la variable prévue
+	// c'est fini, le  rÃ©sultqat est dans la variable prÃ©vue
 	return EXIT_SUCCESS;
 }
 #endif
@@ -147,7 +147,7 @@ int main(void) {
 
 
 /*=========================================================*/
-// PLACE DES DÉFINITIONS DE FONCTIONS
+// PLACE DES DÃ‰FINITIONS DE FONCTIONS
 /*=========================================================*/
 
 
