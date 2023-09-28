@@ -6,9 +6,9 @@
 #include"Aut2023_155_cours00/mtwister.h"
 
 int main(void){
-ts_compter_nb_digit_impair_de_entier()
-compter_nb_digit_impair_de_entier(506571)
-	return EXIT_SUCCESS
+ts_compter_nb_digit_impair_de_entier();
+compter_nb_digit_impair_de_entier(506571);
+	return EXIT_SUCCESS;
 }
 
 
@@ -37,6 +37,7 @@ assert(compter_nb_digit_impair_de_entier(0)==0);
 assert(compter_nb_digit_impair_de_entier(2)==0);
 assert(compter_nb_digit_impair_de_entier(1)==1);
 assert(compter_nb_digit_impair_de_entier(3740)==2);
+assert(compter_nb_digit_impair_de_entier(-2)==0);
 
 
 
