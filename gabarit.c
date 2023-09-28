@@ -1,46 +1,46 @@
 //=========================================================
-// 	hs pour nos étudiants en C
+// 	hs pour nos Ã©tudiants en C
 //=========================================================
 
-/*	ce gabarit d'un programme en première semaine de C
+/*	ce gabarit d'un programme en premiÃ¨re semaine de C
 	contient deux main, vous comprenez qu'il est IMPOSSIBLE
 	qu'ils soient tous  deux simultanement actifs
 
-	j'utilise un artifice de PRÉ-COMPILATION  pour qu'en fait
-	le compilateur n'en voit qu'un à la fois lors de la compilation
+	j'utilise un artifice de PRÃ‰-COMPILATION  pour qu'en fait
+	le compilateur n'en voit qu'un Ã  la fois lors de la compilation
 
-	c'est simple, agréable
-	ainsi vous pourrez écrire, tester et échanger rapidement 
-	vos premières expériences en conception d'algorithmes
+	c'est simple, agrÃ©able
+	ainsi vous pourrez Ã©crire, tester et Ã©changer rapidement 
+	vos premiÃ¨res expÃ©riences en conception d'algorithmes
 
-	vous avez bien des exercices à réaliser cette semaine
-	vous n'allez tout  de même pas générer un fichier pour chacun
+	vous avez bien des exercices Ã  rÃ©aliser cette semaine
+	vous n'allez tout  de mÃªme pas gÃ©nÃ©rer un fichier pour chacun
 
 	et surtout n'oubliez pas,
-	du code correct mais sans indication dans l' en-tête du problème 
-	résolu, sans commentaires ni  identificateurs représentatifs
-	ça vaut quoi??? je réponds même pas!
+	du code correct mais sans indication dans l' en-tÃªte du problÃ¨me 
+	rÃ©solu, sans commentaires ni  identificateurs reprÃ©sentatifs
+	Ã§a vaut quoi??? je rÃ©ponds mÃªme pas!
 */
 
 /* 
-je vous entraine déjà :)
-ce commentaire d'intro servira  lors de l'écriture 
+je vous entraine dÃ©jÃ  :)
+ce commentaire d'intro servira  lors de l'Ã©criture 
 de tout code et travaux
 --vous n'y comprendrez pas tout aujourd'hui--
 
  Auteur / Autrice :
  Date :
 
- description générale du programme
-  ici plein du bla bla ESSENTIEL À TOUT CLIENT ÉVENTUEL 
-  pensez à satisfaire un patron irascible, un client  sociopathe
+ description gÃ©nÃ©rale du programme
+  ici plein du bla bla ESSENTIEL Ã€ TOUT CLIENT Ã‰VENTUEL 
+  pensez Ã  satisfaire un patron irascible, un client  sociopathe
 
-  chaque  élément doit être décrit 
-  de façon simple et standardisée
+  chaque  Ã©lÃ©ment doit Ãªtre dÃ©crit 
+  de faÃ§on simple et standardisÃ©e
   on fait pas dans l'impressionnisme
 
-  cette semaine pensez à copier/coller et remplir 
-  avant chaque main qui veut  résoudre un exercice 
+  cette semaine pensez Ã  copier/coller et remplir 
+  avant chaque main qui veut  rÃ©soudre un exercice 
 */
 
 //=========================================================
@@ -48,12 +48,11 @@ de tout code et travaux
 
 
 //=========================================================
-// voici qui permet de désactiver certains warnings stupides de Visual 
-#define _CRT_SECURE_NO_WARNINGS 
+
 /*=========================================================*/
 
 /*=========================================================*/
-// pour bien débuter,  voici les librairies usuelles à inclure 
+// pour bien dÃ©buter,  voici les librairies usuelles Ã  inclure 
 /*=========================================================*/ 
 #include<stdio.h>
 #include<stdlib.h>
@@ -72,15 +71,22 @@ de tout code et travaux
 
    un identificateur TOUT EN MAJUSCULES
    est celui et que celui d'une constante
-   vous ne dérogerez JAMAIS à ce diktat
+   vous ne dÃ©rogerez JAMAIS Ã  ce diktat
 */
 //=========================================================
 
 
+/*
+On va faire chier le gabarit de Hugues 
+*/
+
+
+
+
 
 //=========================================================
 //=========================================================
-// L'artifice de pré-compilation
+// L'artifice de prÃ©-compilation
 // avec le 1 suivant le  #if, ce main est actuellement actif
 #if 0
 int main(void){
@@ -103,10 +109,10 @@ int main(void){
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -139,10 +145,10 @@ int main(void) {
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -173,10 +179,10 @@ int main(void) {
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -190,9 +196,9 @@ int main(void) {
 #if 0
 int main(void) {
 	/*
-	Faire la somme  de l’inverse multiplicatif des entiers dans
-	l’intervalle [ -12, 55] (l’inverse multiplicatif de x est 1/x et
-	attention si 0 apparait dans l’intervalle donné )
+	Faire la somme  de lâ€™inverse multiplicatif des entiers dans
+	lâ€™intervalle [ -12, 55] (lâ€™inverse multiplicatif de x est 1/x et
+	attention si 0 apparait dans lâ€™intervalle donnÃ© )
 	*/
 	//initialise le compteur initiale pour les operations a suivre
 	int cpt = -12;
@@ -223,10 +229,10 @@ int main(void) {
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -240,8 +246,8 @@ int main(void) {
 int main(void) {
 	/*
 	Compter les entiers dans un intervalle entier qui sont 
-	multiples de 11 et dont le cosinus est supérieur à 0.28467711.
-	prenez [ 101, 2058995] par exemple 
+	multiples de 11 et dont le cosinus est supÃ©rieur Ã  0.28467711.
+	prenez [ 101, 2058995] par exempleÂ 
 	*/
 	//initialise le compteur a 11 
 	int cpt = 11;
@@ -266,10 +272,10 @@ int main(void) {
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -283,8 +289,8 @@ int main(void) {
 int main(void) {
 	/*
 	Trouver la moyenne  du sinus des entiers dans un intervalle
-	entier que vous définissez. Prenez d’abord un petit intervalle
-	puis deux très grands….puis observez vos résultats
+	entier que vous dÃ©finissez. Prenez dâ€™abord un petit intervalle
+	puis deux trÃ¨s grandsâ€¦.puis observez vos rÃ©sultats
 	*/
 	int cpt = -50;
 	int nb_cpt = 0;
@@ -306,10 +312,10 @@ int main(void) {
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -323,7 +329,7 @@ int main(void) {
 int main(void) {
 
 	/*
-	Faire la somme des chiffres d’un entier : ex  5067220 donne 22
+	Faire la somme des chiffres dâ€™un entierÂ : ex  5067220 donne 22
 
 	*/
 	//entier au choix
@@ -342,10 +348,10 @@ int main(void) {
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -363,7 +369,7 @@ int main(void) {
 int main(void) {
 
 	/*
-	Faire le produit des digits non nuls d’un entier (5067220 donne 840)
+	Faire le produit des digits non nuls dâ€™un entierÂ (5067220 donne 840)
 
 
 	*/
@@ -385,10 +391,10 @@ int main(void) {
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -406,7 +412,7 @@ int main(void) {
 int main(void) {
 
 	/*
-	Compter  les occurrences d’un chiffre particulier dans un entier
+	Compter  les occurrences dâ€™un chiffre particulier dans un entier
 
 
 	*/
@@ -429,10 +435,10 @@ int main(void) {
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -472,10 +478,10 @@ int main(void) {
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -493,9 +499,9 @@ int main(void) {
 int main(void) {
 
 	/*
-	Avec un N entier, constant et très grand, 
-	faire émettre un nombre pseudo aléatoire  dans
-	l’intervalle  [1 , N]    pour obtenir la proportion
+	Avec un N entier, constant et trÃ¨s grand, 
+	faire Ã©mettre un nombre pseudo alÃ©atoire  dans
+	lâ€™intervalle  [1 , N]    pour obtenir la proportion
 	de chiffres impairs de cet entier
 	*/
 	//on initialise meserene twister
@@ -529,10 +535,10 @@ int main(void) {
 	double proportion_digitimp = cpt_digit / cpt_digitimp;
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -550,7 +556,7 @@ int main(void) {
 int main(void) {
 
 	/*
-	Répéter plus de 1000 fois l’expérience 5 
+	RÃ©pÃ©ter plus de 1000 fois lâ€™expÃ©rience 5 
 	et faites la moyenne des proportions obtenus
 
 	*/
@@ -596,10 +602,10 @@ int main(void) {
 	//on a completer le nb d'experience #6 choisi
 	double moypropor_digitimp = smm_propor / div_moyenne;
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -618,7 +624,7 @@ int main(void) {
 
 	/*
 	Extraire dans un entier  tous les chiffres impairs 
-	pour former un autre entier,  par exemple : 4458167223
+	pour former un autre entier,  par exempleÂ : 4458167223
 	nous donnera 5173 ( attention un peu plus difficile)
 
 	*/
@@ -641,10 +647,10 @@ int main(void) {
 	}
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -662,7 +668,7 @@ int main(void) {
 int main(void) {
 
 	/*
-	Compter le nombre de diviseurs d’un entier donné
+	Compter le nombre de diviseurs dâ€™un entier donnÃ©
 
 	*/
 	int entier = 9516218;
@@ -686,10 +692,10 @@ int main(void) {
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -707,8 +713,8 @@ int main(void) {
 int main(void) {
 
 	/*
-	Tester si un entier donné est premier
-	(son nombre de diviseurs doit être 2)
+	Tester si un entier donnÃ© est premier
+	(son nombre de diviseurs doit Ãªtre 2)
 	*/
 	int entier = 9516218;
 	//diviseur a incrementer
@@ -734,10 +740,10 @@ int main(void) {
 	}
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -755,7 +761,7 @@ int main(void) {
 int main(void) {
 
 	/*
-	Faire la somme des diviseurs d’un entier 
+	Faire la somme des diviseurs dâ€™un entier 
 
 
 	*/
@@ -785,10 +791,10 @@ int main(void) {
 	
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -806,9 +812,9 @@ int main(void) {
 int main(void) {
 
 	/*
-	Avec  N entier constant et très grand, 
-	faire émettre un nombre pseudo aléatoire  dans 
-	l’intervalle [1 , N] et tester s’il est premier
+	Avec  N entier constant et trÃ¨s grand, 
+	faire Ã©mettre un nombre pseudo alÃ©atoire  dans 
+	lâ€™intervalle [1 , N] et tester sâ€™il est premier
 
 
 	*/
@@ -842,10 +848,10 @@ int main(void) {
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -863,9 +869,9 @@ int main(void) {
 int main(void) {
 
 	/*
-	Obtenir le prochain nombre premier supérieur à un entier
-	donné (c’est la très classique fonction nextprime des logiciels
-	de mathématiques, votre première boucle imbriquée)
+	Obtenir le prochain nombre premier supÃ©rieur Ã  un entier
+	donnÃ© (câ€™est la trÃ¨s classique fonction nextprime des logiciels
+	de mathÃ©matiques, votre premiÃ¨re boucle imbriquÃ©e)
 
 
 	*/
@@ -913,10 +919,10 @@ int main(void) {
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -935,7 +941,7 @@ int main(void) {
 
 	/*
 
-	Dans un intervalle donné, trouver l’entier
+	Dans un intervalle donnÃ©, trouver lâ€™entier
 	ayant un maximum de diviseurs
 	*/
 	int entier = 415;
@@ -978,10 +984,10 @@ int main(void) {
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -999,10 +1005,10 @@ int main(void) {
 int main(void) {
 
 	/*
-	Répéter 12000 fois l’exercice 4  pour estimer
-	la proportion de nombres premiers inférieurs à
-	N. (une proportion est estimée par le nombre de
-	succès divisé par le nombre d’essais)
+	RÃ©pÃ©ter 12000 fois lâ€™exercice 4  pour estimer
+	la proportion de nombres premiers infÃ©rieurs Ã 
+	N. (une proportion est estimÃ©e par le nombre de
+	succÃ¨s divisÃ© par le nombre dâ€™essais)
 	*/
 	int cpt = 0;
 	int cpt_premier = 0;
@@ -1042,10 +1048,10 @@ int main(void) {
 	ratio = cpt_premier / cpt; 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -1060,7 +1066,7 @@ int main(void) {
 int main(void) {
 
 	/*
-	Lancer un dé 15 fois, faire la somme des résultats 
+	Lancer un dÃ© 15 fois, faire la somme des rÃ©sultats 
 	*/
 	
 	mt_srandSys(); //initialize meserene
@@ -1084,10 +1090,10 @@ int main(void) {
 
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -1106,7 +1112,7 @@ int main(void) {
 
 	Compter  le nombre de changements entre pile et face durant
 
-	N lancers d’une pièce (par exemple la suite PPFPFFFFFFPPPP donne 4) 
+	N lancers dâ€™une piÃ¨ce (par exemple la suite PPFPFFFFFFPPPP donne 4) 
 
 	*/
 
@@ -1143,10 +1149,10 @@ int main(void) {
 	//on prend en compte le premier lancer qui a ete calculer comme un changement de resultat
 	cptprime -= 1;
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -1163,7 +1169,7 @@ int main(void) {
 
 	/*
 
-	Répéter 1000 fois l’expérience #1 pour trouver le minimum et le maximum des résultats obtenus
+	RÃ©pÃ©ter 1000 fois lâ€™expÃ©rience #1 pour trouver le minimum et le maximum des rÃ©sultats obtenus
 	*/
 	//initialize lexperience
 	int simul = 0;
@@ -1215,10 +1221,10 @@ int main(void) {
 
 	}
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -1234,7 +1240,7 @@ int main(void) {
 
 	/*
 
-	Obtenir la taille de la plus longue séquence ininterrompue de piles (P) durant  N lancers d’une pièce
+	Obtenir la taille de la plus longue sÃ©quence ininterrompue de piles (P) durant  N lancers dâ€™une piÃ¨ce
 	*/
 	
 		//initialie le compteur
@@ -1277,10 +1283,10 @@ int main(void) {
 
 		
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -1297,7 +1303,7 @@ int main(void) {
 
 	/*
 
-	Lancer un dé ordinaire jusqu’à obtenir successivement 2 valeurs qui se suivent (k, k+1) , on note le nombre de lancers nécessaires 
+	Lancer un dÃ© ordinaire jusquâ€™Ã  obtenir successivement 2 valeurs qui se suivent (k, k+1) , on note le nombre de lancers nÃ©cessaires 
 
 	*/
 	//on veut lancer un de
@@ -1330,10 +1336,10 @@ int main(void) {
 	}
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -1349,7 +1355,7 @@ int main(void) {
 
 	/*
 
-	Lancer un dé ordinaire jusqu’à obtenir successivement 2 valeurs égales (k, k) , on note le nombre de lancers nécessaires 
+	Lancer un dÃ© ordinaire jusquâ€™Ã  obtenir successivement 2 valeurs Ã©gales (k, k) , on note le nombre de lancers nÃ©cessaires 
 
 	*/
 	//on veut lancer un de
@@ -1386,10 +1392,10 @@ int main(void) {
 	}
 
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
@@ -1404,8 +1410,8 @@ int main(void) {
 int main(void) {
 
 	/*
-	Dur de déterminer si les résultats obtenus des exercices 5 et 6 sont parfaitement
-	semblables ou pas.  Alors  on répète 1000 fois les processus pour obtenir leurs 
+	Dur de dÃ©terminer si les rÃ©sultats obtenus des exercices 5 et 6 sont parfaitement
+	semblables ou pas.  Alors  on rÃ©pÃ¨te 1000 fois les processus pour obtenir leurs 
 	statistiques de base (le min, max et moyenne de chacun) et  pouvoir ainsi les comparer.
 	*/
 	//on veut lancer un de
@@ -1465,10 +1471,10 @@ int main(void) {
 	int moy = 0;
 	moy = smm / compteur;
 
-	// on termine l'exécution avec le standard... HIT ANY KEY	
+	// on termine l'exÃ©cution avec le standard... HIT ANY KEY	
 	system("pause");
 
-	// et ÇA, c'est un 0 avec une cravate...
+	// et Ã‡A, c'est un 0 avec une cravate...
 	return EXIT_SUCCESS;
 }
 #endif
